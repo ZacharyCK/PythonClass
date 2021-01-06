@@ -1,0 +1,15 @@
+def multiply_by2(li):
+  new_list = []
+  for item in li:
+    new_list.append(item*2)
+  return new_list
+
+multiply_by2([1,2,3])
+
+# pure function rules check
+# 1 - does it produce the same output with 
+#     the same input - YES
+# 2 - does the function produce no side effects - YES
+# multiply_by2 is a pure function
+# Having pure functions in your projects are going to make
+# code less buggy than not
