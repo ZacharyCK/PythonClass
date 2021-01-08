@@ -1,0 +1,28 @@
+# generator
+def fib(number):
+  a = 0
+  b = 1
+  for i in range(number):
+    yield a # 3
+    temp = a # 3
+    a = b # 5
+    b = temp + b # 3 + 5 = 8
+
+
+for x in fib(1000):
+  print(x)
+
+# list
+def fib2(number):
+  a = 0
+  b = 1
+  result = []
+  for i in range(number):
+    result.append(a)
+    temp = a 
+    a = b # 5
+    b = temp + b 
+  return result
+
+
+print(fib2(1000))
